@@ -2,25 +2,110 @@
 <html>
 
   <head>
-    <title>NodeJS Starter Application</title>
+    <title>IBMSkillTree</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <title>IBMSkillsTree</title>
+
+    <!-- Use the maxcdn network to get Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
   </head>
 
   <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Welcome to Terry's App !</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
+  <section id="intro" class="container">
+      <div class="row" style="padding-top: 8%;">
+        <div class="col-sm-offset-1 col-sm-2">
+          <img class="newappIcon img-responsive" src="images/newapp-icon.png"/>
+        </div>
+        <div class="col-sm-offset-1 col-sm-7">
+          <h1>Webinar: Trusted people! Abilities delivered with continued demonstrations <span class="blue">IBM Skilltree excellence unbound</span></h1>
+          <p style="padding-top: 20px;">IBM offer people with the right skills covering essential role segments and  business needs<span class="blue" style="font-weight:">IBM Professionalss;<span class="blue">helps your business grow through scalable people skills. With a workforce which can cover digital, business and design.</p>
+          <h2>Friday, june 5th, 09:00 am. We look forward to working with you</h2>
+            <span class="blue" style="font-weight: bold;">Any role at any time.</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <hr class="col-sm-offset-1 col-sm-10 blue"/>
+      </div>
+      <div class="row">
+        <form class="form-horizontal" method="post" action="/registration"
+          role="form" id="registration-form">
+          <div class="controls">
+          <p class="col-sm-offset-4 col-sm-8 blue"
+            style="font-weight: bold; font-size: 115%;">
+            Join us! Fill in your details and click Submit.</p>
+          <div class="form-group">
+            <label class="col-sm-3 col-sm-offset-1 control-label"
+              for="firstName">First name:</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="text" id="firstName"
+                name="firstName" placeholder="First name">
+            </div>
+            <label class="col-sm-1 control-label" for="lastName">Last: </label>
+            <div class="col-sm-3">
+              <input class="form-control" type="text" id="lastName"
+                name="lastName" placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 col-sm-offset-2 control-label"
+              for="email">Email:</label>
+            <div class="col-sm-7">
+              <input class="form-control" type="email" id="email" name="email"
+                placeholder="you@example.com">
+	    </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 col-sm-offset-2 control-label"
+              for="company">Company:</label>
+            <div class="col-sm-7">
+              <input class="form-control" type="text" id="company"
+                name="company" placeholder="You, Inc.">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 col-sm-offset-2 control-label"
+              for="city">City:</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="text" id="city" name="city"
+                placeholder="Anytown">
+            </div>
+            <label class="col-sm-1 control-label" for="state">State:</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="text" id="state" name="state"
+                placeholder="NC">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-8">
+              <button class="btn btn-lg"
+                style="border: none; background-color: #00aed1; font-weight: bold;"
+                type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
-
 </html>
